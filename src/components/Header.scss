@@ -1,0 +1,23 @@
+.header {
+	background-color: var(--element-color);
+	box-shadow: var(--shadow);
+	display: flex;
+	gap: 2.4rem;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2.8rem 7.8rem;
+
+	&__title {
+		font-size: 2.2rem;
+		@media screen and (max-width: 28em) {
+			font-size: 2rem;
+		}
+	}
+
+	@media screen and (max-width: 55em) {
+		padding: 2.8rem 4.8rem;
+	}
+	@media screen and (max-width: 25em) {
+		padding: 2.8rem;
+	}
+}

@@ -1,0 +1,44 @@
+.country {
+	width: 26rem;
+	height: 34rem;
+	display: flex;
+	flex-direction: column;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	background-color: var(--element-color);
+	box-shadow: var(--shadow);
+	&__flag-container {
+		height: 16rem;
+	}
+	&__flag {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		object-position: center;
+		box-shadow: var(--shadow);
+	}
+	&__info {
+		flex: auto;
+		padding: 2.4rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.6rem;
+	}
+	&__name {
+		font-size: 1.6rem;
+		margin-bottom: 1.2rem;
+		font-weight: 800;
+	}
+	&__info-item {
+		display: flex;
+		gap: 0.4rem;
+	}
+	&__label {
+		font-size: 1.4rem;
+		font-weight: 600;
+	}
+	&__value {
+		font-size: 1.4rem;
+		font-size: 300;
+	}
+}

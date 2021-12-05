@@ -1,0 +1,62 @@
+.rs {
+	width: 20rem;
+	flex-shrink: 0;
+
+	& .rs__control {
+		background-color: var(--element-color);
+		box-shadow: var(--shadow);
+		border: none;
+		border-radius: 0.5rem;
+		cursor: pointer;
+		height: 5.6rem;
+		transition: none;
+	}
+	& .rs__value-container {
+		padding: 0 2.4rem;
+	}
+	& .rs__single-value {
+		color: var(--text-color);
+		font-size: 1.4rem;
+	}
+	& .rs__placeholder {
+		color: var(--placeholder-color);
+		font-size: 1.4rem;
+	}
+	& .rs__indicator {
+		color: var(--placeholder-color);
+
+		&:hover {
+			color: var(--text-color);
+		}
+	}
+	& .rs__indicator-separator {
+		opacity: 0.5;
+		background-color: var(--placeholder-color);
+	}
+
+	& .rs__menu {
+		background-color: var(--element-color);
+		box-shadow: var(--shadow);
+		border-radius: 0.5rem;
+		margin: 0.5rem 0;
+		font-size: 1.4rem;
+	}
+
+	& .rs__menu-list {
+		max-height: 30rem;
+		padding: 1rem 0;
+	}
+
+	& .rs__option {
+		padding: 0.5rem 2.4rem;
+		color: var(--text-color);
+		cursor: pointer;
+		&--is-focused {
+			background-color: var(--hightlight-color);
+		}
+		&:active,
+		&--is-selected {
+			background-color: var(--focus-color);
+		}
+	}
+}

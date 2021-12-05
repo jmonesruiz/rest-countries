@@ -1,0 +1,32 @@
+.search-bar {
+	position: relative;
+	flex: 0 1 48rem;
+	@media screen and (max-width: 40em) {
+		flex: 1 1 100%;
+	}
+	&__icon {
+		position: absolute;
+		z-index: 10;
+		top: 50%;
+		left: 2.4rem;
+		transform: translate(-50%, -50%);
+		color: var(--text-color);
+		font-size: 1.6rem;
+	}
+	&__input {
+		width: 100%;
+		font-size: 1.4rem;
+		height: 5.6rem;
+		background-color: var(--element-color);
+		box-shadow: var(--shadow);
+		border: none;
+		border-radius: 0.5rem;
+		padding: 0 2.4rem 0 4.8rem;
+		&:focus {
+			outline: none;
+		}
+		&::placeholder {
+			color: var(--placeholder-color);
+		}
+	}
+}

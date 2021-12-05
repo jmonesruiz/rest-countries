@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+
+.app {
+	--element-color: hsl(0, 0%, 100%);
+	--background-color: hsl(0, 0%, 98%);
+	--hightlight-color: hsl(0, 0%, 88%);
+	--focus-color: hsl(0, 0%, 83%);
+	--text-color: hsl(200, 15%, 8%);
+	--placeholder-color: hsl(200, 15%, 32%);
+	--shadow: 0 0 0.5rem 0.5rem rgba(0, 0, 0, 0.05);
+
+	&.dark {
+		--element-color: hsl(209, 23%, 22%);
+		--background-color: hsl(207, 26%, 17%);
+		--hightlight-color: hsl(209, 23%, 32%);
+		--focus-color: hsl(209, 23%, 38%);
+		--text-color: hsl(0, 0%, 100%);
+		--placeholder-color: hsl(0, 0%, 80%);
+	}
+
+	background-color: var(--background-color);
+	color: var(--text-color);
+	min-height: 100vh;
+	overflow: hidden;
+	display: grid;
+	grid-template-rows: min-content 1fr;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+	@media screen and (max-width: 25em) {
+		font-size: 50%;
+	}
+}
+
+body {
+	font-family: "Nunito Sans", sans-serif;
+}
+
+a,
+input,
+button {
+	font-family: "Nunito Sans", sans-serif;
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+.page {
+	padding: 4.8rem 7.8rem 7.8rem;
+	height: 100%;
+	display: grid;
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__not-found-title {
+		font-size: 2.4rem;
+		margin-bottom: 6rem;
+	}
+
+	@media screen and (max-width: 55em) {
+		padding: 4.8rem;
+	}
+	@media screen and (max-width: 25em) {
+		padding: 2.8rem;
+	}
+}
